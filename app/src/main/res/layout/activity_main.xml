@@ -4,20 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_bg"
+    android:background="@drawable/background"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
+    <ImageView
+        android:id="@+id/iv_trophy"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="image"
+        android:src="@drawable/flags"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Quiz App!"
-        android:textSize="25sp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_horizontal"
+        android:text="POLAND QUIZ"
+        android:textColor="@color/white"
+        android:textSize="36sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginBottom="30dp"
+        android:text="How much do you know about Poland ?"
         android:gravity="center"
         android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -40,8 +67,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Welcome"
-                android:textSize="30sp"
+                android:text="Let's check!"
+                android:textSize="27sp"
                 android:textStyle="bold"
                 android:gravity="center"
                 android:textColor="#363A43"
@@ -53,7 +80,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Please enter your name."
+                android:text="Please enter your name:"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:gravity="center"
@@ -74,30 +101,27 @@
                     android:id="@+id/et_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="e.g. Jonh "
+                    android:hint="e.g. Thomas "
                     android:inputType="textCapWords"
                     android:textColor="#363A43"
-                    android:textColorHint="#7A8089"/>
+                    android:textColorHint="#7A8089"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_start"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="@color/design_default_color_primary"
+                android:background="@color/egyptian_blue"
                 android:text="Start"
                 android:textColor="@color/white"
                 android:textSize="18sp"/>
 
 
         </LinearLayout>
-
-
-
-
 
 
     </com.google.android.material.card.MaterialCardView>

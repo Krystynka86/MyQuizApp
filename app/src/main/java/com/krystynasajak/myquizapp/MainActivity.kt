@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         val buttonStart:Button = findViewById(R.id.btn_start)
         val etName: AppCompatEditText = findViewById(R.id.et_name)
         buttonStart.setOnClickListener {
